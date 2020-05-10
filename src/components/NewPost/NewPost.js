@@ -16,7 +16,7 @@ class NewPost extends Component {
             content: this.state.content,
             author: this.state.author
         }
-        axion.post(`https://jsonplaceholder.typicode.com/posts`, post)
+        axion.post(`/posts`, post)
         .then(response => {
             console.log(response);
             
